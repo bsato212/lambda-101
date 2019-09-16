@@ -72,3 +72,104 @@ exports.handler = async event => {
         body: rendered,
     };
 };
+
+/*
+Sample event object for a GET on path "/qod":
+{
+    "resource": "/qod",
+    "path": "/qod",
+    "httpMethod": "GET",
+    "headers": {
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng;q=0.8,application/signed-exchange;v=b3",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-US,en;q=0.9",
+        "Host": "x6o57plnvb.execute-api.us-east-1.amazonaws.com",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-user": "?1",
+        "upgrade-insecure-requests": "1",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36",
+        "X-Amzn-Trace-Id": "Root=1-5d7fedc3-8aa6ef87ff3e01c91a5ef150",
+        "X-Forwarded-For": "187.102.82.56",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng;q=0.8,application/signed-exchange;v=b3"
+        ],
+        "accept-encoding": [
+            "gzip, deflate, br"
+        ],
+        "accept-language": [
+            "en-US,en;q=0.9"
+        ],
+        "Host": [
+            "x6o57plnvb.execute-api.us-east-1.amazonaws.com"
+        ],
+        "sec-fetch-mode": [
+            "navigate"
+        ],
+        "sec-fetch-site": [
+            "cross-site"
+        ],
+        "sec-fetch-user": [
+            "?1"
+        ],
+        "upgrade-insecure-requests": [
+            "1"
+        ],
+        "User-Agent": [
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5d7fedc3-8aa6ef87ff3e01c91a5ef150"
+        ],
+        "X-Forwarded-For": [
+            "187.102.82.56"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "nezs0q",
+        "resourcePath": "/qod",
+        "httpMethod": "GET",
+        "extendedRequestId": "AIIWhERioAMFp7w=",
+        "requestTime": "16/Sep/2019:20:17:07 +0000",
+        "path": "/default/qod",
+        "accountId": "362587813308",
+        "protocol": "HTTP/1.1",
+        "stage": "default",
+        "domainPrefix": "x6o57plnvb",
+        "requestTimeEpoch": 1568665027299,
+        "requestId": "2244805f-2d0d-4da0-96a6-d7af361d6a79",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "187.102.82.56",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36",
+            "user": null
+        },
+        "domainName": "x6o57plnvb.execute-api.us-east-1.amazonaws.com",
+        "apiId": "x6o57plnvb"
+    },
+    "body": null,
+    "isBase64Encoded": false
+}
+*/

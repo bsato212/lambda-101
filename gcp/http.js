@@ -50,10 +50,10 @@ exports.handler = async (req, res) => {
 
     const quote = await getQuote();
     if (!quote) {
-      	return res
-        	.status(500)
-      		.set('Content-Type', 'text/html')
-          	.send('Internal Server Error');
+        return res
+            .status(500)
+            .set('Content-Type', 'text/html')
+            .send('Internal Server Error');
     }
 
     const rendered = template
@@ -61,8 +61,14 @@ exports.handler = async (req, res) => {
         .replace('{author}', quote.contents.quotes[0].author)
         .replace('{img}', quote.contents.quotes[0].background);
 
-  	return res
-    	.status(200)
-  		.set('Content-Type', 'text/html')
-      	.send(rendered);
+    return res
+        .status(200)
+        .set('Content-Type', 'text/html')
+        .send(rendered);
 };
+
+/*
+GCP uses standard Express "req" and "res" objects:
+https://expressjs.com/en/4x/api.html#req
+https://expressjs.com/en/4x/api.html#res
+*/
